@@ -1,16 +1,18 @@
 # VirusSimulator - Simulating spread of viruses
 
 Inspired by the [Washtington Post][1] and borrowing a lot of code from [Peter Collingridge][2], simulating how a virus spread under many different scenarios.
+
+
 <img src="virology_expert.jpg">
 
 ## Blue, Purple, Red and Green persons show stages of the disease
-Every dot in the simulation is a person. The color of the person shows the stage of the disease in this person.
+Every sphere in the simulation is a person. The color of the person shows the stage of the disease in this person.
 
 
 | Color  	| Status     	| Meaning                                                                                                                                                                                                                                                                  	|
 |--------	|------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Blue   	| Healthy    	| A person has doesn't have the disease and hasn't had it either, and is therefore susceptible to the disease                                                                                                                                                              	|
-| Purple 	| Incubation 	| A person that is infected, but does not show symptoms yet. This person cannot spread the disease. After a defined time,<br>this person will turn infected.  In the standard scenario, the disease does not have an incubation period, so purple <br>persons do not exist 	|
+| Purple 	| Incubation 	| A person that is infected, but does not show symptoms yet. This person cannot spread the disease. After a defined time, this person will turn infected. In the standard scenario, the disease does not have an incubation period, so purple persons do not exist 	|
 | Red    	| Infected   	| A person that is infected by the disease and will spread it around when s/he collides with a Healthy person                                                                                                                                                              	|
 | Green  	| Recovered  	| A person that has recovered from the disease, and is not susceptible to the virus anymore                                                                                                                                                                                	|
 
@@ -26,7 +28,7 @@ When no one is infected anymore, the simulation stops. When running multiple sce
   * nr_infected: the number of people that are infected at the beginning (default = 2)
   * pct_quarantined: the percentage of (uninfected) people that do not move - ever (default = 0)
 * Environment characteristics
-  * height_pixes_per_person: to determine the concentration of people -> lower is more dense surrounding (default = 3)
+  * height_pixels_per_person: to determine the concentration of people -> lower is more dense surrounding (default = 3)
   * Allow for distributions of speeds among the population (TO BE DONE)
 * Disease
   * Incubation time (default = 0)
